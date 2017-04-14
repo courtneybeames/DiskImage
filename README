@@ -1,0 +1,51 @@
+README:
+
+I have a makefile in the directory
+type 'make' to compile
+
+I also have an input file called disk.ima
+
+I have 4 files:
+
+DISK INFO:
+
+Run: ./diskinfo disk.ima
+
+Disk info outputs:
+OS Name
+Label of the Disk
+Total size of the disk
+Free size of the disk
+Number of files in the root directory
+Number of FAT copies
+Sectors per FAT
+
+
+DISK LIST:
+
+Run: ./disklist disk.ima
+
+Disk list outputs:
+F or D for whether the file is a file(F) or directory(D)
+The file size
+The file name
+The file date and the file time
+
+
+DISK GET:
+
+Run: ./diskget disk.ima ICEBERGS.TEX (or ANS1.PDF or REMINDER.TXT)
+
+outputs file not found if cannot find file
+
+Disk list produces a file in your directory that it gets from disk.ima
+
+
+
+DISK PUT:
+
+Run: ./diskput disk.ima foo.txt (or whichever file you would like to put in)
+
+Disk put puts a file into disk.ima and updates the disk accordingly
+
+
